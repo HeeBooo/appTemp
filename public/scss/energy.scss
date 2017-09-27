@@ -1,0 +1,71 @@
+@import "global";
+
+body {
+  background-color: #1f232c;
+}
+.swiper-container {
+  height: 210px;
+  margin-bottom: 10px;
+  background-color: #1e212b;
+}
+.swiper-pagination-bullet {
+  background: #4b4d55;
+}
+.swiper-pagination-bullet-active {
+  background: #50c589;
+}
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+}
+.swiper-container {
+  .common-e {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+  }
+}
+.title1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 13px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #1d2029;
+  i {
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #fb6e52;
+    vertical-align: middle;
+  }
+}
+.sw2 .title1 i {
+  background-color: #ffce55;
+}
+.top5  {
+  position: relative;
+  .title1  {
+    position: static;
+    i {
+      background-color: #ec87bf;
+    }
+  }
+  .ebox {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 5px;
+  }
+}
+.main {
+  min-height: $minHeight;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  background-color: #1f232c;
+}

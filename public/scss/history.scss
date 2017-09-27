@@ -1,0 +1,83 @@
+@import "global";
+
+.main {
+  min-height: $minHeight;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  background-color: #1f232c;
+  .option {
+    .site-title {
+      display: flex;
+      height: 50px;
+      //padding-right: 15px;
+      align-items: center;
+      line-height: 50px;
+      background-color: #1d2029;
+      i {
+        display: inline-block;
+        width: 4px;
+        height: 16px;
+        border-radius: 2px;
+        margin-left: 13px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      .title {
+        color: #fff;
+        margin-right: auto;
+      }
+      .avg {
+        font-size: 12px;
+      }
+    }
+    .red {
+      i {
+        background-color: #fb6e52;
+      }
+    }
+    .yellow {
+      i {
+        background-color: #a0d468;
+      }
+      .avg {
+        color: #a0d468;
+      }
+    }
+    .zi {
+      i {
+        background-color: #ac92ed;
+      }
+      .avg {
+        color: #ac92ed;
+      }
+    }
+    .pink {
+      i {
+        background-color: #ed92e8;
+      }
+    }
+    .echart {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.title1 {
+  width: 100%;
+  height: 50px;
+  //padding-left: 13px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  i {
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #fb6e52;
+    vertical-align: middle;
+  }
+}
