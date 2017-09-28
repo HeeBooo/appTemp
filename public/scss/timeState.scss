@@ -1,6 +1,79 @@
 @import "global";
-
+body {
+  font-size: 62.25%;
+}
 #map {
   width: 100%;
   height: $minHeight;
+}
+.detail {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 415px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #08234b;
+  z-index: 9999;
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    color: #1c84b5;
+  }
+  .detail-title {
+    height: 80px;
+    padding-top: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #29b2f2;
+    p {
+      color: #fff;
+      text-align: center;
+      &:nth-of-type(1) {
+        font-size: 18px;
+      }
+      &:nth-of-type(2) {
+        font-size: 14px;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .option {
+      width: 85px;
+      height: 85px;
+      margin: 12px 5px;
+      border-radius: 50%;
+      text-align: center;
+      p {
+        margin-top: 15px;
+        font-size: 24px;
+        color: #fff;
+      }
+      span {
+        font-size: 12px;
+        color: #abacaf;
+      }
+    }
+    .green {
+      border: 2px solid #3eaa71;
+
+    }
+    .blue {
+      border: 2px solid #51c0e8;
+    }
+    .yellow {
+      border: 2px solid #a0d468;
+    }
+    .pink {
+      border: 2px solid #ac92ed;
+    }
+  }
 }
