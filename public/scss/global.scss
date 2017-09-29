@@ -1,10 +1,18 @@
+//@font-face {
+//  font-family: 'iconfont';  /* project id 413432 */
+//  src: url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.eot');
+//  src: url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.eot?#iefix') format('embedded-opentype'),
+//  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.woff') format('woff'),
+//  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.ttf') format('truetype'),
+//  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.svg#iconfont') format('svg');
+//}
 @font-face {
-  font-family: 'iconfont';  /* project id 413432 */
-  src: url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.eot');
-  src: url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_413432_uma3ju9x2rjrwwmi.svg#iconfont') format('svg');
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont');
 }
 $topColor: #1b1e27;
 $navColor: #0f1116;
@@ -27,13 +35,18 @@ $minHeight: 593px;
   //padding-left:20px
 }
 header {
+  position: fixed;
+  top: 0;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 0 13px;
   height: 44px;
   line-height: 44px;
   color: #fefefe;
-  background-color: $topColor;
+  //background-color: $topColor;
+  background-color: #03152c;
+  z-index: 9999;
   a {
     font-size: 16px;
   }
@@ -51,7 +64,9 @@ header {
   align-items: center;
   height: 50px;
   padding: 0 15px;
-  background-color: $topColor;
+  margin-top: 44px;
+  //background-color: $topColor;
+  background-color: #03152c;
   border: none;
   a {
     height: 20px;
@@ -77,22 +92,31 @@ header {
     line-height: 50px;
     text-align: center;
     color: #fff;
-    border-bottom: 1px solid #51586d;
-    background-color: #2c313e;
+    //border-bottom: 1px solid #51586d;
+    border-bottom: 1px solid #0e3162;
+    //background-color: #2c313e;
+    background-color: #08234b;
+  }
+  .active {
+    color: #3cc1ff;
   }
 }
 
 .region {
   position: absolute;
   top: 44px;
+  left: 0;
+  bottom: 0;
   right: 100%;
   z-index: 9999;
   display: flex;
-  height: 642px;
+  margin: auto;
+  //height: 400px;
   overflow-y: auto;
   background-color: #1f242e;
   .province {
     overflow-y: auto;
+    background-color: #021123;
     ul {
       color: #fff;
       list-style: none;
@@ -102,17 +126,20 @@ header {
         font-size: 16px;
         line-height: 50px;
         text-align: center;
-        background-color: #1d2029;
+        //background-color: #1d2029;
+        background-color: #021123;
         border-bottom: 1px solid #242935;
       }
       .active {
-        background-color: #51c489;
+        //background-color: #51c489;
+        background-color: #3fc1ff;
       }
     }
   }
   .city {
     flex: 1;
     overflow-y: auto;
+    background-color: #071b3d;
     .city-option {
       //border: 1px solid #242935;
       .title {
@@ -120,7 +147,8 @@ header {
         height: 50px;
         line-height: 50px;
         color: rgba(254, 254, 254, 0.5);
-        background-color: #1f242e;
+        //background-color: #1f242e;
+        background-color: #071b3d;
       }
       .title-act {
         color: #50c489;
@@ -132,7 +160,8 @@ header {
         border-bottom: 1px solid #242935;
         overflow: hidden;
         padding: 10px 7px 0 7px;
-        background-color: #232732;
+        //background-color: #232732;
+        background-color: #08234b;
         .item {
           margin: 0 2px 10px 2px;
           width: 55px;
@@ -149,7 +178,8 @@ header {
           }
         }
         .active {
-          border: 1px solid #50c489;
+          //border: 1px solid #50c489;
+          border: 1px solid #3cc1ff;
           color: #50c489;
         }
       }
@@ -188,4 +218,14 @@ nav {
   .act {
     color: $actNav;
   }
+}
+.shade {
+  position: fixed;
+  height: $minHeight;
+  z-index: 9998;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
 }

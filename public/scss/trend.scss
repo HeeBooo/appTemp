@@ -1,25 +1,11 @@
 @import "global";
 
-.time {
-  position: absolute;
-  top: 94px;
-  display: none;
-  width: 100%;
-  z-index: 9998;
-  p {
-    line-height: 50px;
-    text-align: center;
-    color: #fff;
-    border-bottom: 1px solid #51586d;
-    background-color: #2c313e;
-  }
-}
-
 .main {
   min-height: $minHeight;
   padding-top: 5px;
   padding-bottom: 50px;
-  background-color: $mainBgColor;
+  //background-color: $mainBgColor;
+  background-color: #071b3d;
   .option {
     margin-bottom: 10px;
     .site-title {
@@ -28,7 +14,8 @@
       justify-content: space-between;
       color: #fff;
       line-height: 50px;
-      background-color: #1d2029;
+      //background-color: #1d2029;
+      background-color: #08234b;
       .iconfont {
         transition: all linear .2s;
       }

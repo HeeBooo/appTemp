@@ -1,11 +1,39 @@
 @import "global";
 
+.show-date {
+  select {
+    display: none;
+    text-align: center;
+    background-color: #03152c;
+    border: none;
+    font-size: 16px;
+    color: #bbbcbd;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance:none;
+    option {
+      text-align: center;
+    }
+  }
+  p {
+    display: none;
+    position: relative;
+    input {
+      position: absolute;
+      top: 0;
+      left: -60px;
+      opacity: 0;
+    }
+  }
+
+}
 
 .main {
   min-height: $minHeight;
   padding-top: 5px;
   padding-bottom: 50px;
-  background-color: #1f232c;
+  //background-color: #1f232c;
+  background-color: #08234b;
   .option {
     .site-title {
       display: flex;
